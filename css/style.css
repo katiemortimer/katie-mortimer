@@ -1,0 +1,149 @@
+/* Import Google Web fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+@import url('https://fonts.googleapis.com/css?family=Vollkorn+SC');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body {
+    /* sets the page defaults e.g. background and default typography */
+    background: #dca7a0;
+  font-family: 'Vollkorn SC', serif;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.74);
+    border: dotted;
+    border-color: #867e77;
+    margin: 9%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/* a few tweaks here and there */
+
+h2 {
+    margin: 0;
+}
+
+figure {
+    margin: 0;
+    /* resets the left margin in the figure*/
+}
+
+figure img {
+    max-width: 100%;
+    /* images will shrink to fit inside the main conent column*/
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+figcaption {
+    font-size: 14px;
+    color: #555;
+}
+
+blockquote {
+  width: 80%;
+margin: 2em auto;
+background: #948161;
+padding: 2em;
+font-size: 1.25em;
+text-align: center;
+color: #4b0c07;
+border-bottom: 1px solid #4b0c07;
+border-top: 1px solid #4b0c07;
+}
+
+
+/* Styling the full-page background headers */
+
+.image_bg, .color_bg {
+    height: 100vh;
+    /* this sets the height of each full width image section to that of the viewport.*/
+    position: relative;
+    /*display: flex;  */
+    background-position: center !important;
+}
+
+
+/* the text inside the headers */
+
+header {
+  font-family: 'Lobster', cursive;
+color: #dca7a0;
+font-weight: 700;
+text-shadow: 0 0 25px #000000;
+width: 85%;
+text-align: center;
+/* margin: auto; */
+position: absolute;
+top: 50%;
+left: 50%;
+    /*   margin: auto;
+   */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 6vw;
+}
+
+header a {
+    color: white;
+}
+
+
+/* Styles for individual header sections by class name. */
+
+.pier {
+    background: url(../images/luc-sur-mer-pier.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    /* the background image doesn't move when scrolling*/
+}
+
+
+/* the above style gets copied for every new section header with background image. Each new copy has a new class name. */
+
+.paris {
+    background: url(../images/Paris2013.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.green_header {
+    /* this sets the background colour of the coloured header. */
+    background: #66c5a5;
+}
+
+.cat {
+  background: url(../images/cat.jpg);
+  background-size: cover;
+}
+
+
+/* Content sections */
+
+.content {
+    margin: 0 auto;
+    padding: 1em;
+    width: 60%;
+    box-sizing: border-box;
+    /* this in-effect sets the content section's width e.g. 20% = 60% width. */
+}
+
+footer {
+    height: 100px;
+    background: #000;
+    color: #eee;
+    text-align: center;
+    padding: 1em;
+}
